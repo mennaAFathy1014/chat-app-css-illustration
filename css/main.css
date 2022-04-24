@@ -85,7 +85,7 @@ body::before{
     width: 40%;
     height: 80%;
     background-color: hsl(270, 20%, 96%);
-    bottom: -2.5rem;
+    bottom: 0;
     right: 0;
     z-index: -1;
     border-radius: 12.5rem 0 0 0;
