@@ -15,12 +15,13 @@ body{
     align-content: center;
 }
 .container{
+    width: 100%;
     margin-block-start: 2.5rem;
     margin-block-end: 2.5rem;
     padding:1.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 @media (min-width:48rem) {
@@ -28,25 +29,25 @@ body{
         flex-direction: row;
     }
 }
-/*small*/
+/* small
 @media (min-width:48rem) {
     .container{
         width: 46.875rem;
     }
 }
-/*medium*/
+/*medium
 @media (min-width:62rem) {
     .container{
         width: 60.625rem;
     }
 }
-/*large*/
+/*large
 @media (min-width:75rem) {
     .container{
         width: 73.125rem;
         margin-inline-start: auto;
     }
-}
+} */
 body{
     position: relative;
     background-color: #E9E6E6;
@@ -96,13 +97,19 @@ body::before{
 }
 @media (min-width:62rem) {
     body{
-        height: 100vh;
+        /* height: 100vh; */
     }
     body::before{
         display: block;
     }
+    .container{
+        justify-content: space-around;
+    }
 }
 .phone{
+    margin-inline-start: 1rem;
+    margin-inline-end: 1rem;
+    min-height: 35.5rem;
     padding: 0.625rem;
     background-color:hsl(0, 0%, 100%);
     width: 18.75rem;
@@ -113,6 +120,12 @@ body::before{
     -moz-border-radius: 1.5rem;
     -ms-border-radius: 1.5rem;
     -o-border-radius: 1.5rem;
+}
+@media (min-width:62rem) {
+    .phone{
+        margin-inline-start: auto;
+        margin-inline-end: 5.5rem;
+    }
 }
 .phone-frame{
     background-color: hsl(270, 20%, 96%);
@@ -171,7 +184,7 @@ body::before{
 .phone-frame .head-container .info{
     color: hsl(276, 100%, 81%);
 }
-.phone-frame .head-container .info h2{
+.phone-frame .head-container .info h1{
     color: white;
 }
 .phone-frame .head-container i {
@@ -274,13 +287,13 @@ body::before{
     width: 100%;
 }
 .simple{
-    width: 18.75rem;
+    width: 40%;
     margin-block-start: 3.5rem;
 }
 .simple .simple-container{
     text-align: center;
 }
-.simple-container h2{
+.simple-container h1{
     color:hsl(271, 36%, 24%);
     margin-block-end: 1.5rem;
     font-weight: 500;
@@ -291,16 +304,18 @@ body::before{
 }
 @media (min-width:48rem) {
     .simple{
-        margin-block-start: auto;
+        /* margin-block-start: auto;
         margin-block-end: auto;
        margin-inline-end: auto;
-       margin-inline-start: 5.5rem;
+       margin-inline-start: 5.5rem; */
+       margin-inline-start: 3.5rem;
+       margin-inline-end: 4.5rem;
     }
     .simple .simple-container{
         text-align: left;
         width: 25rem;
     }
-    .simple .simple-container h2{
+    .simple .simple-container h1{
         font-size: 2rem;
     }
 }
