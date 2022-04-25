@@ -70,20 +70,20 @@ body::after{
 @media (min-width:48rem) {
 
     body::after{
-        width: 40%;
+        width: 31.25rem;
         left: 0;
-        border-radius:0 0 15rem 15rem ;
-        -webkit-border-radius:0 0 15rem 12.5rem ;
-        -moz-border-radius:0 0 15rem 12.5rem ;
-        -ms-border-radius:0 0 15rem 12.5rem ;
-        -o-border-radius:0 0 15rem 12.5rem ;
+        border-radius:0 0 17rem 17em ;
+        -webkit-border-radius:0 0 17rem 17rem ;
+        -moz-border-radius:0 0 17rem 17rem ;
+        -ms-border-radius:0 0 17rem 17rem ;
+        -o-border-radius:0 0 17rem 17rem ;
 }
 }
 body::before{
     content: "";
     display: none;
     position: absolute;
-    width: 40%;
+    width: 25rem;
     height: 80%;
     background-color: hsl(270, 20%, 96%);
     bottom: 0;
