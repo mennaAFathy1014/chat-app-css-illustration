@@ -97,7 +97,7 @@ body::before{
 }
 @media (min-width:62rem) {
     body{
-        /* height: 100vh; */
+        height: 100vh;
     }
     body::before{
         display: block;
